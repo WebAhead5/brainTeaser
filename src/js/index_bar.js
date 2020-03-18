@@ -6,7 +6,7 @@ const skip_btn = document.getElementById('skip');
 
 setting_btn.addEventListener('click', () => {
     console.log("aaaaaaaaaaaa");
-    window.open('setting.html',"_self");
+    window.open('resourcesrc/html/index.html',"_self");
 
   });
   refresh_btn.addEventListener('click', () => {
