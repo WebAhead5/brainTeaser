@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport", initial-scale="1.0">
+    <link href="https://fonts.googleapis.com/css?family=Italianno|Petit+Formal+Script|Zeyada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/home/morad/webAhead/brainTeaser/src/style/style.css">
+    <title>brainTeaser</title>
+</head>
+<body > 
+    <div class="splashMain">
+        
+    <!-- <img src="https://media.giphy.com/media/3oEdv4RIvkLQCSl4ek/giphy.gif" alt="backgroundgif" class="backgroundgif"> -->
+        <header class="tada" onmousemove="slideIn.play();">we are going to challenge your mind a bit!</header>
+        
+        <div class="splashimg animated ">
+            <img src="/home/morad/webAhead/brainTeaser/resource/img/brainleft.png" alt="lefthem" style="width:8%;" class="left" >
+            <img src="/home/morad/webAhead/brainTeaser/resource/img/brain right.png" alt="righthem" style="width: 7%;" class="right">  
+        </div>
+        
+        <button id="div1" class="btn start" href="#lvl1" onclick="start.play();" >
+            <img src="/home/morad/webAhead/brainTeaser/resource/img/cont.png" alt="start">
+        </button>
+    </div>
+</body>
+
+<script>
+    var start = new Audio();
+    var slideIn = new Audio();
+    start.src = "/home/morad/webAhead/brainTeaser/resource/snds/bbyScrm.mp3";
+    slideIn.src = "/home/morad/webAhead/brainTeaser/resource/snds/slide.mp3";
+    function jumpto(num) {
+        start.play();
+        var div1 = document.getElementById("div1");
+        div1.innerHTML = "Let's to go to lvl #"+num;
+    }
+
+    function initial1() {
+        slideIn.play();
+    }
+    // var start = new Audio(); working sound effect
+    // start.src = "/home/morad/webAhead/brainTeaser/resource/snds/bbyScrm.mp3";
+    src="/home/morad/webAhead/brainTeaser/src/js/splash.js";
+</script>
+</html>
