@@ -7,13 +7,13 @@ htm{
 }
 .question{
   margin: 0 auto;
-  background:black;
+  background:blue;
 }
 
 .question img{
-    height: 200px;
-    width: 200px;
-    padding: 20px;
+    height: 100px;
+    width: 100px;
+    padding: 70px;
 }
 
 #question_text{
