@@ -1,3 +1,11 @@
+htm{
+    width:100%
+}
+body{
+    width: 100%;
+    text-align: center;
+}
+
 button{
     background-color: yellowgreen;
     border: none;
