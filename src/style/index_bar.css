@@ -6,4 +6,6 @@ button{
     font-size: 16px;
     cursor: pointer;
 }
-icon-bar
+.lvlnum{
+    color: #f9d230;
+}
