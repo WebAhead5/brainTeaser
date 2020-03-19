@@ -44,8 +44,12 @@ imgClick.addEventListener('click', (e) => {
         playSound("../../resource/snds/bbyScrm.mp3");
     }
   }else{
+<<<<<<< HEAD
+    alert("Wrong answer BRO");
+=======
     alert("End");
     return;
+>>>>>>> dbb36a8ba88283d780dac5dfed6b02099d311592
   }
 });
 
