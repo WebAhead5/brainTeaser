@@ -39,12 +39,12 @@ imgClick.addEventListener('click', (e) => {
     if( result === questionsArray[currentQuestion].answer){
         playSound("../../resource/snds/slide.mp3");
         showQuestion(++currentQuestion);
-        document.getElementById("LevNum").textContent="Amir";
     }else{
+        alert("Wrong answer!!")
         playSound("../../resource/snds/bbyScrm.mp3");
     }
   }else{
-    alert("Wrong answer BRO");
+    alert("End of questions");
     return;
   }
 });
