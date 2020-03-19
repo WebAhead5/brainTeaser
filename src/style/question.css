@@ -1,0 +1,24 @@
+htm{
+    width:100%
+}
+.question-body{
+    width: 100%;
+    text-align: center;
+}
+.question{
+  margin: 0 auto;
+  background:blue;
+}
+
+.question img{
+    height: 100px;
+    width: 100px;
+    padding: 70px;
+}
+
+#question_text{
+    text-color: red;
+}
+
+#images_table{
+}
