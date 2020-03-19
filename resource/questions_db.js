@@ -21,3 +21,6 @@ var questionsDb = [
         answer:0
     }
 ]
+
+
+//Farid are you sure you want this file in the resources folder and not the js ?

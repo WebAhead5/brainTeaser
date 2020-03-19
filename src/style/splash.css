@@ -1,0 +1,89 @@
+
+.splash{
+    margin: 0;
+}
+
+header{
+    position: relative;
+    justify-content: center;
+    top: 15px;
+    font-family: 'Zeyada',cursive;
+    font-size: 60px;
+    padding-left: 18%;
+    color: darkred;
+}
+
+
+
+.left .right{
+    padding-top: 10%;
+}
+
+.left{
+    /* margin: auto; */
+    padding-left: 40%;
+}
+
+
+.right:hover{
+    transform-origin: center;
+    transform: rotate(8deg);
+
+}
+
+.left:hover{
+    transform: rotate(8deg)
+}
+
+.splashMain{
+    transform: scaleY(20deg);
+    align-items: center;
+    background-image: url(https://media.giphy.com/media/3oEdv4RIvkLQCSl4ek/giphy.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.start{
+    position: absolute;
+    /* place-content: center; */
+    top: 450px;
+    box-shadow: 22px gray;
+    left: 50%;
+}
+
+.start:hover{
+    background-image: linear-gradient(blue, red);
+}
+
+.tada{
+    position: relative;
+    left: -100%;
+    width: 80%;
+    height: 100px;
+    /* background: blue; */
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+
+@media screen{
+    header{
+        font-size: 50px;
+        padding-left: 10%;
+    }
+
+    .start{
+        left: 38%;
+    }
+}
