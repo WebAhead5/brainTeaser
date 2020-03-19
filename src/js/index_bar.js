@@ -10,7 +10,7 @@ setting_btn.addEventListener('click', () => {
 
   });
   refresh_btn.addEventListener('click', () => {
-    window.open('../html/index.html',"_self");
+    //window.open('../html/index.html',"_self");
   });
   skip_btn.addEventListener('click', () => {
     //alert("if you click skip you will lose 2 points from your credit"); 
