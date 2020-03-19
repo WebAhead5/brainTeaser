@@ -1,8 +1,8 @@
 var questionsArray = questionsDb;
-const images_folder = "http://localhost:63342/brainTeaser/resource/img/";
+const images_folder = "../../resource/img/";
 var currentQuestion = 0;
 
-function showQuestion(index){
+  function showQuestion(index){
     //Question text
     questionTextDomElement = document.querySelector('#question_text');
     questionTextDomElement.textContent = questionsArray[index].questionText;
