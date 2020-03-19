@@ -16,7 +16,7 @@ var start = new Audio();
 
     const startBtn = document.getElementById('startBtn') ;
     startBtn.addEventListener('click', () => {
-        window.open('../../src/html/question.html','_self');
+        window.open('../../src/html/splash.html','_self');
     })
 
 // function stratFunc() {
