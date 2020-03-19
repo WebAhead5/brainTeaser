@@ -21,25 +21,37 @@ var currentQuestion = 0;
 showQuestion(currentQuestion);
 
 const imgClick = document.querySelector('#images_table');
-imgClick.addEventListener('click', (e) => {
-    console.log(e);
-  let result = -1;
-  if(e.path[2].rowIndex == 0){
-    if(e.path[1].cellIndex == 0)
-        result = 0;
-    else
-        result = 1;
-  }else if (e.path[2].rowIndex == 1){
-    if(e.path[1].cellIndex == 0)
-      result = 2;
-    else
-      result = 3;
-  }
-  if( result === questionsArray[currentQuestion].answer){
-    currentQuestion++;
-    showQuestion(currentQuestion);
-  }else{
-    alert("Wrong");
-  }
 
+imgClick.addEventListener('click', (e) => {
+  if(currentQuestion < questionsArray.length){
+    let result = -1;
+    if(e.path[2].rowIndex == 0){
+        if(e.path[1].cellIndex == 0)
+            result = 0;
+        else
+            result = 1;
+    }else if (e.path[2].rowIndex == 1){
+        if(e.path[1].cellIndex == 0)
+            result = 2;
+        else
+            result = 3;
+    }
+    if( result === questionsArray[currentQuestion].answer){
+        playSound("../../resource/snds/slide.mp3");
+        showQuestion(++currentQuestion);
+    }else{
+        playSound("../../resource/snds/bbyScrm.mp3");
+    }
+  }else{
+    alert("End");
+    return;
+  }
 });
+
+
+var start = new Audio();
+function playSound(sound_file_name){
+   start.pause();
+   start.src = sound_file_name;
+   start.play();
+}

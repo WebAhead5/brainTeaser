@@ -9,6 +9,16 @@ var questionsDb = [
         ],
         answer:2
     },
+    {
+        questionText: "Which is the biggest?",
+        pictures: [
+        "melon.png",
+        "banana.png",
+        "strbry.png",
+        "apple.png"
+        ],
+        answer:2    
+    },
 
     {
         questionText: "Argentina flag?",
@@ -20,6 +30,8 @@ var questionsDb = [
         ],
         answer:0
     }
+    
+
 ]
 
 
