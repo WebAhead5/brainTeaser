@@ -39,7 +39,7 @@ imgClick.addEventListener('click', (e) => {
     currentQuestion++;
     showQuestion(currentQuestion);
   }else{
-    alert("Wrong");
+    alert("Wrong answer BRO");
   }
 
 });
