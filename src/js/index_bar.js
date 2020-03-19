@@ -3,6 +3,7 @@ const setting_btn = document.getElementById('settings');
 const refresh_btn = document.getElementById('refresh');
 
 const skip_btn = document.getElementById('skip');
+ //showQuestion(currentQuestion) ;
 
 setting_btn.addEventListener('click', () => {
     console.log("aaaaaaaaaaaa");
@@ -10,8 +11,11 @@ setting_btn.addEventListener('click', () => {
 
   });
   refresh_btn.addEventListener('click', () => {
-    window.open('index.html',"_self");
+    window.open('resourcesrc/html/setting.html',"_self");
   });
   skip_btn.addEventListener('click', () => {
-    alert("if yoyu click skip you will lose 2 points from your credit");
+    //alert("if you click skip you will lose 2 points from your credit"); 
+    console.log(currentQuestion)   ;
+   // showQuestion(currentQuestion);
+
   });

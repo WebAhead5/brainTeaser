@@ -2,7 +2,7 @@ var questionsArray = questionsDb;
 const images_folder = "../../resource/img/";
 var currentQuestion = 0;
 
-function showQuestion(index){
+  function showQuestion(index){
     //Question text
     questionTextDomElement = document.querySelector('#question_text');
     questionTextDomElement.textContent = questionsArray[index].questionText;
@@ -21,25 +21,41 @@ function showQuestion(index){
 showQuestion(currentQuestion);
 
 const imgClick = document.querySelector('#images_table');
-imgClick.addEventListener('click', (e) => {
-    console.log(e);
-  let result = -1;
-  if(e.path[2].rowIndex == 0){
-    if(e.path[1].cellIndex == 0)
-        result = 0;
-    else
-        result = 1;
-  }else if (e.path[2].rowIndex == 1){
-    if(e.path[1].cellIndex == 0)
-      result = 2;
-    else
-      result = 3;
-  }
-  if( result === questionsArray[currentQuestion].answer){
-    currentQuestion++;
-    showQuestion(currentQuestion);
-  }else{
-    alert("Wrong answer BRO");
-  }
 
+imgClick.addEventListener('click', (e) => {
+  if(currentQuestion < questionsArray.length){
+    let result = -1;
+    if(e.path[2].rowIndex == 0){
+        if(e.path[1].cellIndex == 0)
+            result = 0;
+        else
+            result = 1;
+    }else if (e.path[2].rowIndex == 1){
+        if(e.path[1].cellIndex == 0)
+            result = 2;
+        else
+            result = 3;
+    }
+    if( result === questionsArray[currentQuestion].answer){
+        playSound("../../resource/snds/slide.mp3");
+        showQuestion(++currentQuestion);
+    }else{
+        playSound("../../resource/snds/bbyScrm.mp3");
+    }
+  }else{
+<<<<<<< HEAD
+    alert("Wrong answer BRO");
+=======
+    alert("End");
+    return;
+>>>>>>> dbb36a8ba88283d780dac5dfed6b02099d311592
+  }
 });
+
+
+var start = new Audio();
+function playSound(sound_file_name){
+   start.pause();
+   start.src = sound_file_name;
+   start.play();
+}
