@@ -39,6 +39,7 @@ imgClick.addEventListener('click', (e) => {
     if( result === questionsArray[currentQuestion].answer){
         playSound("../../resource/snds/slide.mp3");
         showQuestion(++currentQuestion);
+        document.getElementById("LevNum").textContent="Amir";
     }else{
         playSound("../../resource/snds/bbyScrm.mp3");
     }
